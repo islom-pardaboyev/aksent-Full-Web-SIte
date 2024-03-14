@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksent</title>
+</head>
+
+<body class="text-white">
+
+    <header class="container fixed top-0 bg-[red]">
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
+
+    <section class="bg-[url('/img/home-1.png')] w-screeb h-screen">
+        <div class="container"></div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: "1rem"
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

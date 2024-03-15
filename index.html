@@ -17,12 +17,13 @@
 
 <body class="text-white font-poppins">
 
-    <header class="w-full fixed px-[5rem] top-0">
+    <header style="z-index: 10000;"
+        class="w-full duration-200 fixed shadow-lg px-[5rem] border-b border-grey-200 pb-6 top-0">
         <div class="flex items-center py-8 justify-between">
             <div class="flex items-center gap-5">
                 <p>Toshkent</p>
                 <div class="flex items-center gap-2">
-                    <img src="./img/weather.png" alt="">
+                    <img class="header-img" src="./img/weather.png" alt="">
                     <p>28°C</p>
                 </div>
             </div>
@@ -61,8 +62,8 @@
         </div>
     </header>
 
-    <section class="bg-[url('/img/home-1.png')] bg-cover  w-screen h-screen">
-        <div class="flex items-center justify-between px-[5rem] pt-[25%]">
+    <section class="bg-[url('/img/home-1.png')] bg-cover w-screen h-screen">
+        <div class="flex items-center justify-between px-[5rem] pt-[15%]">
             <div class="flex flex-col">
                 <p class="uppercase text-sm text-grey"><span class="text-purple">•</span> tezkor yangiliklar</p>
                 <p class="font-bold text-4xl mt-3 mb-4">Davlat rahbari vazirlik, hokimlik <br> bilan navbatdan tashqari
@@ -72,7 +73,23 @@
                 </p>
                 <p class="text-sm text-purple">Davlat</p>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center">
+                <div class="mb-12">
+                    <p class="text-xs text-grey-100">Tahlil</p>
+                    <p class="my-2 font-bold">Davlat rahbari vazirlik, hokimlik va idoralar <br> bilan navbatdan
+                        tashqari
+                        yig‘ilishini o‘tkazdi
+                    </p>
+                    <p class="text-xs text-purple">Davlat</p>
+                </div>
+                <div class="mb-12">
+                    <p class="text-xs text-grey-100">Tahlil</p>
+                    <p class="my-2 font-bold">Davlat rahbari vazirlik, hokimlik va idoralar <br> bilan navbatdan
+                        tashqari
+                        yig‘ilishini o‘tkazdi
+                    </p>
+                    <p class="text-xs text-purple">Davlat</p>
+                </div>
                 <div>
                     <p class="text-xs text-grey-100">Tahlil</p>
                     <p class="my-2 font-bold">Davlat rahbari vazirlik, hokimlik va idoralar <br> bilan navbatdan
@@ -81,6 +98,91 @@
                     </p>
                     <p class="text-xs text-purple">Davlat</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="px-[5rem] mt-[100px] flex justify-between">
+            <div class="relative">
+                <img src="./img/image 19.png" class="border border-white" alt="">
+                <div class="flex flex-col absolute bottom-4 px-4">
+                    <p class="flex gap-2 text-xs mb-2">25 iyul 2021 <span class="text-purple">Sport</span></p>
+                    <p class="text-xs font-bold">19 yoshli Ulug‘bek Rashidov Olimpiya <br> finalida buyuk britaniyalik
+                        raqibini
+                        <br>
+                        mag‘lubiyatga
+                        uchratdi
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./img/image 19.png" class="border border-white" alt="">
+                <div class="flex flex-col absolute bottom-4 px-4">
+                    <p class="flex gap-2 text-xs mb-2">25 iyul 2021 <span class="text-purple">Sport</span></p>
+                    <p class="text-xs font-bold">19 yoshli Ulug‘bek Rashidov Olimpiya <br> finalida buyuk britaniyalik
+                        raqibini
+                        <br>
+                        mag‘lubiyatga
+                        uchratdi
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./img/image 19.png" class="border border-white" alt="">
+                <div class="flex flex-col absolute bottom-4 px-4">
+                    <p class="flex gap-2 text-xs mb-2">25 iyul 2021 <span class="text-purple">Sport</span></p>
+                    <p class="text-xs font-bold">19 yoshli Ulug‘bek Rashidov Olimpiya <br> finalida buyuk britaniyalik
+                        raqibini
+                        <br>
+                        mag‘lubiyatga
+                        uchratdi
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./img/image 19.png" class="border border-white" alt="">
+                <div class="flex flex-col absolute bottom-4 px-4">
+                    <p class="flex gap-2 text-xs mb-2">25 iyul 2021 <span class="text-purple">Sport</span></p>
+                    <p class="text-xs font-bold">19 yoshli Ulug‘bek Rashidov Olimpiya <br> finalida buyuk britaniyalik
+                        raqibini
+                        <br>
+                        mag‘lubiyatga
+                        uchratdi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white w-screen mt-[100px] text-black px-[5rem] h-screen">
+        <div class="grid grid-cols-12">
+            <div class="col-span-3 h-full border border-r-transparent px-7 py-4 border-grey-300">
+                <p class="font-bold text-3xl mb-2.5">Aktual yangiliklar</p>
+                <div
+                    class="font-medium py-4 px-3 border-transparent hover:bg-grey-500 border duration-200 hover:border-purple line-clamp-3 overflow-hidden">
+                    <p>Samarqand viloyatida chorva <br> mollarining asosiy qismi aholi <br> tomonidan
+                        boqilayotgani</p>
+                    <p class="text-xs text-grey-400 flex gap-3 mt-2">Bugun, 15:21 <span
+                            class="text-purple">Davlat</span></p>
+                </div>
+                <div
+                    class="font-medium py-4 px-3 border-transparent hover:bg-grey-500 border duration-200 hover:border-purple line-clamp-3 overflow-hidden">
+                    <p>Samarqand viloyatida chorva <br> mollarining asosiy qismi aholi <br> tomonidan
+                        boqilayotgani</p>
+                    <p class="text-xs text-grey-400 flex gap-3 mt-2">Bugun, 15:21 <span
+                            class="text-purple">Davlat</span></p>
+                </div>
+                <div
+                    class="font-medium py-4 px-3 border-transparent hover:bg-grey-500 border duration-200 hover:border-purple line-clamp-3 overflow-hidden">
+                    <p>Samarqand viloyatida chorva <br> mollarining asosiy qismi aholi <br> tomonidan
+                        boqilayotgani</p>
+                    <p class="text-xs text-grey-400 flex gap-3 mt-2">Bugun, 15:21 <span
+                            class="text-purple">Davlat</span></p>
+                </div>
+            </div>
+            <div class="col-span-6">
+                <img src="./img/home2.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <p>hello world</p>
             </div>
         </div>
     </section>
@@ -101,14 +203,36 @@
                         purple: {
                             DEFAULT: "#7B7BFF"
                         },
+                        black: {
+                            DEFAULT: "#151515"
+                        },
                         grey: {
                             DEFAULT: "#FFFFFF66",
-                            100: "#FFFFFF99"
+                            100: "#FFFFFF99",
+                            200: '#FFFFFF33',
+                            300: '#1515150F',
+                            400: '#A1A1A1',
+                            500: '#F2F2FA'
                         }
                     },
                 }
             }
         }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const headerImg = document.querySelector('.header-img')
+
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white')
+                header.classList.add('text-black')
+            } else {
+                header.classList.remove('bg-white')
+                header.classList.remove('text-black')
+            }
+        })
     </script>
 </body>
 

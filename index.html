@@ -5,18 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aksent</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body class="text-white">
+<body class="text-white font-poppins">
 
-    <header class="container fixed top-0 bg-[red]">
-        <div></div>
-        <div></div>
-        <div></div>
+    <header class="w-full fixed px-[5rem] top-0">
+        <div class="flex items-center py-8 justify-between">
+            <div class="flex items-center gap-5">
+                <p>Toshkent</p>
+                <div class="flex items-center gap-2">
+                    <img src="./img/weather.png" alt="">
+                    <p>28°C</p>
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="./img/aksent logo.png" alt="">
+                </a>
+            </div>
+            <div>
+                <select class="text-black">
+                    <option value="O'zb" selected>O'zbekcha</option>
+                    <option value="Ўзб">Ўзбекча</option>
+                    <option value="Рус">Русский</option>
+                    <option value="Eng">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="flex items-center uppercase font-medium gap-6">
+                <a class="hover:text-purple duration-200" href="#">Siyosat</a>
+                <a class="hover:text-purple duration-200" href="#">Jamiyat</a>
+                <a class="hover:text-purple duration-200" href="#">Tahlil</a>
+                <a class="hover:text-purple duration-200" href="#">Qonunchilik</a>
+            </div>
+            <div class="flex items-center uppercase font-medium gap-4">
+                <a class="hover:text-purple duration-200" href="#">Aksent-TV</a>
+                <span class="text-purple">•</span>
+                <a class="hover:text-purple duration-200" href="#">Nuqtai Nazar</a>
+                <span class="text-purple">•</span>
+                <a class="hover:text-purple duration-200" href="#">Info Taqdim</a>
+                <span class="h-6 w-px bg-grey"></span>
+                <a class="hover:text-purple duration-200" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section class="bg-[url('/img/home-1.png')] w-screeb h-screen">
-        <div class="container"></div>
+    <section class="bg-[url('/img/home-1.png')] bg-cover  w-screen h-screen">
+        <div class="flex items-center justify-between px-[5rem] pt-[25%]">
+            <div class="flex flex-col">
+                <p class="uppercase text-sm text-grey"><span class="text-purple">•</span> tezkor yangiliklar</p>
+                <p class="font-bold text-4xl mt-3 mb-4">Davlat rahbari vazirlik, hokimlik <br> bilan navbatdan tashqari
+                    <br>
+                    yig‘ilishini
+                    o‘tkazdi
+                </p>
+                <p class="text-sm text-purple">Davlat</p>
+            </div>
+            <div class="flex flex-col">
+                <div>
+                    <p class="text-xs text-grey-100">Tahlil</p>
+                    <p class="my-2 font-bold">Davlat rahbari vazirlik, hokimlik va idoralar <br> bilan navbatdan
+                        tashqari
+                        yig‘ilishini o‘tkazdi
+                    </p>
+                    <p class="text-xs text-purple">Davlat</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,10 +93,19 @@
                     center: true,
                     padding: "1rem"
                 },
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"]
+                },
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                    }
+                        purple: {
+                            DEFAULT: "#7B7BFF"
+                        },
+                        grey: {
+                            DEFAULT: "#FFFFFF66",
+                            100: "#FFFFFF99"
+                        }
+                    },
                 }
             }
         }
